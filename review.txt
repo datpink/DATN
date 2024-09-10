@@ -1,0 +1,11 @@
+chạy composer update
+
+copy nội dung file .env.example
+
+tạo file .env mới
+
+chạy lệnh php artisan key:generate
+
+đổi tên name database
+
+chạy
