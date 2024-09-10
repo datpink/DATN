@@ -8,4 +8,4 @@ chạy lệnh php artisan key:generate
 
 đổi tên name database
 
-chạy
+chạy migrate
