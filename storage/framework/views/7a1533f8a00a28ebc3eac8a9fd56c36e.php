@@ -1,4 +1,4 @@
-<link rel="shortcut icon" href="<?php echo e(asset('theme/admin/assets/images/favicon.svg')); ?>">
+<link rel="shortcut icon" href="<?php echo e(asset('theme/admin/assets/images/hyper_muteki.png')); ?>">
 <link rel="stylesheet" href="<?php echo e(asset('theme/admin/assets/css/animate.css')); ?>">
 <link rel="stylesheet" href="<?php echo e(asset('theme/admin/assets/fonts/bootstrap/bootstrap-icons.css')); ?>">
 <link rel="stylesheet" href="<?php echo e(asset('theme/admin/assets/css/main.min.css')); ?>">

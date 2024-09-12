@@ -176,8 +176,8 @@
                                             </td>
                                             <td>
                                                 <div class="media-box">
-                                                    <img src="../theme/admin/assets/images/food/img3.jpg" class="media-avatar"
-                                                        alt="Admin Themes">
+                                                    <img src="../theme/admin/assets/images/food/img3.jpg"
+                                                        class="media-avatar" alt="Admin Themes">
                                                     <div class="media-box-body">
                                                         <div class="text-truncate">Ginger Snacks</div>
                                                     </div>
@@ -206,8 +206,8 @@
                                             </td>
                                             <td>
                                                 <div class="media-box">
-                                                    <img src="../theme/admin/assets/images/food/img6.jpg" class="media-avatar"
-                                                        alt="Admin Themes">
+                                                    <img src="../theme/admin/assets/images/food/img6.jpg"
+                                                        class="media-avatar" alt="Admin Themes">
                                                     <div class="media-box-body">
                                                         <div class="text-truncate">Guava Sorbet</div>
                                                     </div>
@@ -236,8 +236,8 @@
                                             </td>
                                             <td>
                                                 <div class="media-box">
-                                                    <img src="../theme/admin/assets/images/food/img5.jpg" class="media-avatar"
-                                                        alt="Admin Themes">
+                                                    <img src="../theme/admin/assets/images/food/img5.jpg"
+                                                        class="media-avatar" alt="Admin Themes">
                                                     <div class="media-box-body">
                                                         <div class="text-truncate">Gooseberry Surprise</div>
                                                     </div>
@@ -511,6 +511,4 @@
                     </div>
                 </div>
             </div>
-            <!-- Row end -->
-
         @endsection

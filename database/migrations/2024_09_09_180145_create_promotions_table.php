@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('code')->unique();
             $table->decimal('discount_value', 10, 2);
-            $table->boolean('status')->default(true);
+            $table->enum('status', ['active', 'inactive']);
             $table->date('start_date');
             $table->date('end_date')->nullable();
             $table->softDeletes();
