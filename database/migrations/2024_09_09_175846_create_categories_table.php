@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->text('description')->nullable();
-            $table->boolean('status')->default(true);
+            $table->enum('status', ['active', 'inactive'])->default('active')->change();
             $table->unsignedBigInteger('parent_id');
             $table->softDeletes();
             $table->timestamps();

@@ -28,4 +28,8 @@ class ProductVariant extends Model
     {
         return $this->belongsTo(AttributeValue::class);
     }
+
+    protected $casts = [
+        'attributes' => 'array',
+    ];
 }

@@ -165,7 +165,7 @@
                                         <tr>
                                             <td>
                                                 <div class="media-box">
-                                                    <img src="../adminn/assets/images/user3.png" class="media-avatar"
+                                                    <img src="../theme/admin/assets/images/user3.png" class="media-avatar"
                                                         alt="Bootstrap Gallery">
                                                     <div class="media-box-body">
                                                         <div class="text-truncate">Ellie Collins</div>
@@ -174,7 +174,7 @@
                                             </td>
                                             <td>
                                                 <div class="media-box">
-                                                    <img src="../adminn/assets/images/food/img3.jpg" class="media-avatar"
+                                                    <img src="../theme/admin/assets/images/food/img3.jpg" class="media-avatar"
                                                         alt="Admin Themes">
                                                     <div class="media-box-body">
                                                         <div class="text-truncate">Ginger Snacks</div>
@@ -195,7 +195,7 @@
                                         <tr>
                                             <td>
                                                 <div class="media-box">
-                                                    <img src="../adminn/assets/images/user.png" class="media-avatar"
+                                                    <img src="../theme/admin/assets/images/user.png" class="media-avatar"
                                                         alt="Bootstrap Gallery">
                                                     <div class="media-box-body">
                                                         <div class="text-truncate">Sophie Nguyen</div>
@@ -204,7 +204,7 @@
                                             </td>
                                             <td>
                                                 <div class="media-box">
-                                                    <img src="../adminn/assets/images/food/img6.jpg" class="media-avatar"
+                                                    <img src="../theme/admin/assets/images/food/img6.jpg" class="media-avatar"
                                                         alt="Admin Themes">
                                                     <div class="media-box-body">
                                                         <div class="text-truncate">Guava Sorbet</div>
@@ -225,7 +225,7 @@
                                         <tr>
                                             <td>
                                                 <div class="media-box">
-                                                    <img src="../adminn/assets/images/user4.png" class="media-avatar"
+                                                    <img src="../theme/admin/assets/images/user4.png" class="media-avatar"
                                                         alt="Bootstrap Gallery">
                                                     <div class="media-box-body">
                                                         <div class="text-truncate">Darcy Ryan</div>
@@ -234,7 +234,7 @@
                                             </td>
                                             <td>
                                                 <div class="media-box">
-                                                    <img src="../adminn/assets/images/food/img5.jpg" class="media-avatar"
+                                                    <img src="../theme/admin/assets/images/food/img5.jpg" class="media-avatar"
                                                         alt="Admin Themes">
                                                     <div class="media-box-body">
                                                         <div class="text-truncate">Gooseberry Surprise</div>
@@ -449,7 +449,7 @@
                                 <div class="activity-container">
                                     <div class="activity-block">
                                         <div class="activity-user">
-                                            <img src="../adminn/assets/images/user.png" alt="Activity User">
+                                            <img src="../theme/admin/assets/images/user.png" alt="Activity User">
                                         </div>
                                         <div class="activity-details">
                                             <h4>Lilly Desmet</h4>
@@ -460,7 +460,7 @@
                                     </div>
                                     <div class="activity-block">
                                         <div class="activity-user">
-                                            <img src="../adminn/assets/images/user3.png" alt="Activity User">
+                                            <img src="../theme/admin/assets/images/user3.png" alt="Activity User">
                                         </div>
                                         <div class="activity-details">
                                             <h4>Jennifer Wilson</h4>
@@ -471,7 +471,7 @@
                                     </div>
                                     <div class="activity-block">
                                         <div class="activity-user">
-                                            <img src="../adminn/assets/images/user4.png" alt="Activity User">
+                                            <img src="../theme/admin/assets/images/user4.png" alt="Activity User">
                                         </div>
                                         <div class="activity-details">
                                             <h4>Elliott Hermans</h4>
@@ -482,7 +482,7 @@
                                     </div>
                                     <div class="activity-block">
                                         <div class="activity-user">
-                                            <img src="../adminn/assets/images/user5.png" alt="Activity User">
+                                            <img src="../theme/admin/assets/images/user5.png" alt="Activity User">
                                         </div>
                                         <div class="activity-details">
                                             <h4>Sophie Michiels</h4>
@@ -493,7 +493,7 @@
                                     </div>
                                     <div class="activity-block">
                                         <div class="activity-user">
-                                            <img src="../adminn/assets/images/user2.png" alt="Activity User">
+                                            <img src="../theme/admin/assets/images/user2.png" alt="Activity User">
                                         </div>
                                         <div class="activity-details">
                                             <h4>Ilyana Maes</h4>

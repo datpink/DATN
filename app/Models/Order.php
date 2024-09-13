@@ -4,6 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Enums\OrderStatus;
+use App\Enums\PaymentStatus;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Order extends Model
 {
@@ -17,8 +20,15 @@ class Order extends Model
         'status',
         'payment_status',
         'shipping_address',
-        'payment_method_id'
+        'payment_method_id',
+        'phone_number'
     ];
+
+    public function orderItems()
+    {
+        return $this->hasMany(OrderItem::class);
+    }
+
 
     public function user()
     {
@@ -39,4 +49,33 @@ class Order extends Model
     {
         return $this->belongsTo(PaymentMethod::class);
     }
+
+    public function setStatusAttribute($value)
+    {
+        if (!in_array($value, OrderStatus::all())) {
+            throw new \InvalidArgumentException("Invalid status value");
+        }
+        $this->attributes['status'] = $value;
+    }
+
+    public function getStatusAttribute($value)
+    {
+        return $value;
+    }
+
+    public function setPaymentStatusAttribute($value)
+    {
+        if (!in_array($value, PaymentStatus::all())) {
+            throw new \InvalidArgumentException("Invalid payment status value");
+        }
+        $this->attributes['payment_status'] = $value;
+    }
+
+    public function getPaymentStatusAttribute($value)
+    {
+        return $value;
+    }
+
+    use SoftDeletes;
+    protected $dates = ['deleted_at'];
 }

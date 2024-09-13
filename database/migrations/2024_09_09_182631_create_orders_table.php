@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
@@ -17,10 +16,17 @@ return new class extends Migration
             $table->foreignId('promotion_id')->nullable()->constrained('promotions')->onDelete('set null');
             $table->decimal('total_amount', 10, 2);
             $table->decimal('discount_amount', 10, 2)->nullable();
-            $table->string('status');
-            $table->string('payment_status');
+            $table->enum('status', [
+                'processing',
+                'Delivering',
+                'shipped',
+                'canceled',
+                'refunded'
+            ])->default('processing');
+            $table->enum('payment_status', ['pending', 'paid', 'failed'])->default('pending');
             $table->string('shipping_address')->nullable();
             $table->foreignId('payment_method_id')->nullable()->constrained('payment_methods')->onDelete('set null');
+            $table->string('phone_number')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

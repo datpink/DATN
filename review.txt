@@ -9,3 +9,19 @@ chạy lệnh php artisan key:generate
 đổi tên name database
 
 chạy migrate
+
+php artisan db:seed --class=RolesTableSeeder
+php artisan db:seed --class=UsersTableSeeder
+php artisan db:seed --class=PaymentMethodsTableSeeder
+php artisan db:seed --class=PromotionsTableSeeder
+php artisan db:seed --class=OrdersTableSeeder
+php artisan db:seed --class=BrandsTableSeeder
+php artisan db:seed --class=CataloguesTableSeeder
+php artisan db:seed --class=ProductsTableSeeder
+php artisan db:seed --class=AttributesTableSeeder
+php artisan db:seed --class=AttributeValueTableSeeder
+php artisan db:seed --class=ProductVariantsTableSeeder
+php artisan db:seed --class=ProductVariantAttributesTableSeeder
+php artisan db:seed --class=OrderItemTableSeeder
+
+php artisan migrate:refresh
