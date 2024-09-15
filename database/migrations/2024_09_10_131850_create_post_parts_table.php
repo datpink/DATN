@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('post_part', function (Blueprint $table) {
+        Schema::create('post_parts', function (Blueprint $table) {
             $table->id();
             $table->foreignId('post_id')->constrained()->onDelete('cascade');
             $table->string('type');
-            $table->string('content');
-            $table->string('image');
+            $table->string('content')->nullable();
+            $table->string('image')->nullable();
             $table->integer('order');
             $table->softDeletes();
         });

@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\OrderController;
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,4 +28,9 @@ Route::prefix('admin')->group(function () {
     Route::get('/orders-trash', [OrderController::class, 'trash'])->name('orders.trash');
     Route::post('/orders/{id}/restore', [OrderController::class, 'restore'])->name('orders.restore');
     Route::delete('/orders/{id}/force-delete', [OrderController::class, 'forceDelete'])->name('orders.forceDelete');
+
+    // Categories
+
+    Route::resource('categories', CategoryController::class);
+    Route::resource('posts', PostController::class);
 });

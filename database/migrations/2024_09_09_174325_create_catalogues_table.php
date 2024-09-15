@@ -13,7 +13,6 @@ class CreateCataloguesTable extends Migration
             $table->string('name');
             $table->string('slug')->unique();
             $table->string('image')->nullable();
-            $table->text('description')->nullable();
             $table->enum('status', ['active', 'inactive'])->default('active');
             $table->foreignId('parent_id')->nullable()->constrained('catalogues')->onDelete('cascade');
             $table->timestamps();

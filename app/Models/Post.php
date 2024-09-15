@@ -11,10 +11,11 @@ class Post extends Model
 
     protected $fillable = [
         'title',
-        'content',
+        'summary',
         'image',
         'category_id',
-        'user_id'
+        'user_id',
+        'view',
     ];
 
     public function category()
@@ -30,5 +31,8 @@ class Post extends Model
     public function comments()
     {
         return $this->hasMany(Comment::class);
+    }
+    public function parts() {
+        return $this->hasMany(PostPart::class);
     }
 }
